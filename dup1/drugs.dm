@@ -287,7 +287,7 @@
 	icon = 'grafon/1dba19b34341.jpg'
 /obj/hud_effect/nightmare
 /obj/hud_effect/nightmare/New()
-	icon = pick('grafon/mir-space-station.jpg', 'grafon/creepy_art.jpg', 'grafon/creepy1.jpg', 'grafon/creepy2.jpg', 'grafon/wtc.jpg', 'grafon/RetrieveAsset.jpg', 'grafon/ap_nick_ut_pulitzer_prize_image_1972_vietnam_thg_120606_wblog.jpg', 'grafon/1dba19b34341.jpg')
+	icon = pick('grafon/mir-space-station.jpg', 'grafon/creepy_art.jpg', 'grafon/creepy1.jpg', 'grafon/creepy2.jpg', 'grafon/nightmare3.dmi', 'grafon/nightmare2.dmi', 'grafon/nightmare1.dmi', 'grafon/1dba19b34341.jpg')
 
 
 /obj/hud_effect/blurry
