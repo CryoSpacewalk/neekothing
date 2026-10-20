@@ -170,7 +170,14 @@
 	if(length_char(msg) > 100)
 		user << "\red Brevity is a sister of talent."
 		return
-	shell("eSpeak/command_line/espeak[world.system_type == MS_WINDOWS ? ".exe" : ""] -w sound.wav -p 30 -s 200 -g 2 -v [src.language] \"[msg]\"")
+	// eSpeak reads the message from a UTF-8 text file (-b 1 -f) instead of the command line:
+	// on Windows, Russian text passed on the command line arrives garbled, and player text
+	// inside a shell command could inject extra commands. On Windows the path needs
+	// backslashes, or shell() cannot start the program.
+	fdel("speech.txt")
+	text2file(msg, "speech.txt")
+	var/espeak = world.system_type == MS_WINDOWS ? "eSpeak\\command_line\\espeak.exe" : "eSpeak/command_line/espeak"
+	shell("[espeak] -b 1 -f speech.txt -w sound.wav -p 30 -s 200 -g 2 -v [src.language]")
 	for(var/mob/M in world)
 		if(M.client)
 			M << sound("sound.wav")
