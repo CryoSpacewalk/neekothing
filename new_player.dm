@@ -604,7 +604,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 			src.spacedmg()
 			src.toxdmg()
 			src.prof = "captain"
-			..()
+			//..()
 		else if(!src.client.logged_in)
 			src.loc = locate(68, 12, 2)
 			var/newname
@@ -700,7 +700,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 			src.toxdmg()
 			src.spacedmg()
 			playernum++
-			..()
+			//..()
 
 /mob/proc/georobot()
 	sleep(0)

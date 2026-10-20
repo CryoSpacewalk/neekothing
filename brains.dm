@@ -85,7 +85,7 @@
 				usr << "\blue Your body feels numb a bit."
 
 /mob/verb/checkout()
-	label1
+	// was an unused label "label1" from the decompiler (an empty line in the original .dmb)
 
 
 	if(src.hunger > 300)

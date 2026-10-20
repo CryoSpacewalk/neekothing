@@ -2275,8 +2275,9 @@
 		M:client:party_temporal(quaziamt)
 		if(prob(5))
 			M:mindbreak(1, 2)
-		label1
-			M:mindbreak(1, 4)
+		// was an unused label "label1" from the decompiler, with the next line indented under it.
+		// The original has no prob() check here (pipes has if(prob(2))), so this always runs - probably an original bug.
+		M:mindbreak(1, 4)
 		if(prob(70))
 			M:damaga(round(quaziamt / 2.5), "organ")
 			M:calm -= 1
@@ -2325,8 +2326,9 @@
 		M:client:party_temporal(quaziamt)
 		if(prob(5))
 			M:mindbreak(1, 2)
-		label1
-			M:mindbreak(1, 4)
+		// was an unused label "label1" from the decompiler, with the next line indented under it.
+		// The original has no prob() check here (pipes has if(prob(2))), so this always runs - probably an original bug.
+		M:mindbreak(1, 4)
 		if(prob(70))
 			M:damaga(round(quaziamt / 2.5), "organ")
 			M:calm -= 1
@@ -2423,8 +2425,9 @@
 		M:client:party_temporal(quaziamt)
 		if(prob(5))
 			M:mindbreak(1, 2)
-		label1
-			M:mindbreak(1, 4)
+		// was an unused label "label1" from the decompiler, with the next line indented under it.
+		// The original has no prob() check here (pipes has if(prob(2))), so this always runs - probably an original bug.
+		M:mindbreak(1, 4)
 		if(prob(70))
 			M:damaga(round(quaziamt / 2.5), "organ")
 			M:calm -= 1

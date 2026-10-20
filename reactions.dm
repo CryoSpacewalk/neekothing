@@ -604,7 +604,7 @@
 /datum/reaction/napalm/react(R1, R2, obj/location)
 	reaction_message(location, "\red OH FUCK ITS BURNING")
 	var/reactive_amount
-	var/place as turf
+	var/place
 	if(!istype(location:loc, /turf))
 		place = location:loc:loc
 	else
@@ -731,7 +731,7 @@
 /datum/reaction/smoke/react(R1, R2, obj/location)
 	reaction_message(location, "\red PSHHHHHH")
 	var/reactive_amount
-	var/place as turf
+	var/place
 	if(!istype(location:loc, /turf))
 		place = location:loc:loc
 	else

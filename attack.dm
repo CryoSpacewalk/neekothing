@@ -433,7 +433,7 @@
 		return
 
 	if(src.hepe <= 0)
-		label1
+		// was an unused label "label1" from the decompiler (an empty line in the original .dmb)
 		show_message("\red [user] [pick("kicks", "cold-bloodedly punches", "swings at", "spits at", "[pick("farts", "swings his dick")] in the direction of", "stares glumly at")] [src]'s corpse.")
 		return
 
@@ -485,7 +485,7 @@
 		else
 			if(prob(75 - src.armor + user:empowered * 5 + user:brutality * 2 + extras * 2))
 				src.damaga(3 + user:empowered, "brute")
-		label2
+		// was an unused label "label2" from the decompiler (an empty line in the original .dmb)
 		show_message("\red [user] [pick("kicks", "punches", "slaps", "bites", "headbutts", "stabs in the eyes with his fingers", "strikes with an elbow")] [src]!")
 	else
 

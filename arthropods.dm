@@ -415,4 +415,4 @@
 	remove_chem("toxin", 5)
 	desc = "A risky delicacy: roasted bombus lucidum."
 
-	..()
+	//..()
