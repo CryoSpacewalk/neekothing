@@ -167,7 +167,7 @@
 	var/msg = input(user, "What would you like to announce, comrade?", "A.S.S.") as text
 	if(!msg)
 		return
-	if(length(msg) > 100)
+	if(length_char(msg) > 100)
 		user << "\red Brevity is a sister of talent."
 		return
 	shell("eSpeak/command_line/espeak[world.system_type == MS_WINDOWS ? ".exe" : ""] -w sound.wav -p 30 -s 200 -g 2 -v [src.language] \"[msg]\"")
