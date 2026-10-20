@@ -183,7 +183,7 @@ var/dnet_comission = 5
 
 
 /obj/item/device/communicator/proc/zatar(mob/junkie)
-	var/B = input("Добро пожаловать. Снова. You have [money] cherenkovs left", "[darknet_name]") in barygas
+	var/B = input("Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ. РЎРЅРѕРІР°. You have [money] cherenkovs left", "[darknet_name]") in barygas
 	if(B && src == junkie:item)
 		src.zatar_good(junkie, B)
 

@@ -748,7 +748,7 @@ var/list/abyssal_levels = list(7)
 		usr << "\red You're already linked with the powers of Abyss!"
 	else if(prob(33))
 		usr << "\blue You hear a voice in your head:"
-		usr << "\red \bold ßise up and dßown trotskists and boußgeouses in their own blood! Gloßy to the deeds of the now-Ethernal comrade Stalin! Victory is oußs!"
+		usr << "\red \bold Ğ¯ise up and dĞ¯own trotskists and bouĞ¯geouses in their own blood! GloĞ¯y to the deeds of the now-Ethernal comrade Stalin! Victory is ouĞ¯s!"
 		spawn(10)
 			usr.cult()
 	else

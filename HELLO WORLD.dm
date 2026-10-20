@@ -209,7 +209,7 @@
 		if(istype(src.camera_anchor, /obj/structure/camera))
 			src.observe_target(src.camera_anchor)
 		if(!(src.camera_anchor in view(src.eye)))
-			src << "\red ÅÃÃÎÃ: OUT OF CAMERA REACH"
+			src << "\red Ð•Ð“Ð“ÐžÐ“: OUT OF CAMERA REACH"
 			src.camera_anchor = null
 		return 1
 
@@ -262,7 +262,7 @@
 
 	limbs = list(new /obj/limb/robot/r_hand, new /obj/limb/robot/l_hand, new /obj/limb/robot/r_leg, new /obj/limb/robot/l_leg); name = "Spess crawler";icon_state = "pod"
 /mob/robot/New()
-	src.name = pick("S.H.O.D.A.N.", "M.A.L.F.", "G.L.A.D.O.S.", "Skynet", "ßÌ", "T-34", "Hoborg", "Klaymen", "Big robot Bill")
+	src.name = pick("S.H.O.D.A.N.", "M.A.L.F.", "G.L.A.D.O.S.", "Skynet", "Ð¯Ðœ", "T-34", "Hoborg", "Klaymen", "Big robot Bill")
 	src.realname = src.name
 	src.verbs -= powahs
 /mob/robot/attack_by(obj/I)

@@ -268,7 +268,7 @@
 	size = 4
 	market_price = 600
 	projectile_type = /obj/lazor/plasma
-	name = "'Åucalyptus'-class plasma rifle"
+	name = "'Ð•ucalyptus'-class plasma rifle"
 	desc = "A heavy-duty weapon for dealing with massive crap."
 	icon_state = "plasmagun_off"
 	var/icon_basic = "plasmagun"

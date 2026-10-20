@@ -14,7 +14,7 @@
 
 /obj/shoggoth/examine()
 
-	usr << "It looks weird, ¸ut... so <font color = [pick("red", "purple", "yellow", "green")]>[pick("ﬂ", "R", "r", "#")]</font><font color = [pick("red", "purple", "yellow", "green")]>E</font><font color = [pick("red", "purple", "yellow", "green")]>A</font><font color = [pick("red", "purple", "yellow", "green")]>L</font>"
+	usr << "It looks weird, —åut... so <font color = [pick("red", "purple", "yellow", "green")]>[pick("–Ø", "R", "r", "#")]</font><font color = [pick("red", "purple", "yellow", "green")]>E</font><font color = [pick("red", "purple", "yellow", "green")]>A</font><font color = [pick("red", "purple", "yellow", "green")]>L</font>"
 	usr.client.controlsfuck = 1
 	for(var/i = 0, i < 10, i++)
 		input("Select your role, plox.", "prof") in profavaible
@@ -31,7 +31,7 @@
 			del(src)
 		spawn(0) src.psyscream()
 	else
-		src.show_message("[usr.name] [pick("t", "T", "Ú")][pick("ﬂ", "R")]IES T[pick("0", "o", "O", "()", "_")] [pick("H", "h", "Ì")]IT <font color = [pick("red", "purple", "yellow", "green")]>MA</font><font color = [pick("red", "purple", "yellow", "green")]>NI</font><font color = [pick("red", "purple", "yellow", "green")]>FE</font><font color = [pick("red", "purple", "yellow", "green")]>ST</font><font color = [pick("red", "purple", "yellow", "green")]>AT</font><font color = [pick("red", "purple", "yellow", "green")]>OR</font> witÌ [I:name] without A[pick("œ", "n", "N", "»")]” effe—t")
+		src.show_message("[usr.name] [pick("t", "T", "—Ç")][pick("–Ø", "R")]IES T[pick("0", "o", "O", "()", "_")] [pick("H", "h", "–Ω")]IT <font color = [pick("red", "purple", "yellow", "green")]>MA</font><font color = [pick("red", "purple", "yellow", "green")]>NI</font><font color = [pick("red", "purple", "yellow", "green")]>FE</font><font color = [pick("red", "purple", "yellow", "green")]>ST</font><font color = [pick("red", "purple", "yellow", "green")]>AT</font><font color = [pick("red", "purple", "yellow", "green")]>OR</font> wit–Ω [I:name] without A[pick("–ü", "n", "N", "–ò")]–£ effe–°t")
 
 
 /obj/shoggoth/proc/psyscream()
@@ -78,7 +78,7 @@
 /proc/srnd()
 
 
-	var/s = pick("#", "@", "^", "ˇ", "_", "'", "+", "\bold ", "\red ", "\blue ", "\green ")
+	var/s = pick("#", "@", "^", "—è", "_", "'", "+", "\bold ", "\red ", "\blue ", "\green ")
 
 
 
@@ -100,4 +100,4 @@
 	if(prob(66))
 		return ""
 	else
-		return "ˇ"
+		return "—è"

@@ -1412,7 +1412,7 @@
 	groovy = 40
 	name = "minus-axe"
 	icon_state = "electronaxe"
-	desc = "Новейшее средство находить виновных!"
+	desc = "РќРѕРІРµР№С€РµРµ СЃСЂРµРґСЃС‚РІРѕ РЅР°С…РѕРґРёС‚СЊ РІРёРЅРѕРІРЅС‹С…!"
 /obj/item/weapon/battleaxe/electron
 
 /obj/item/weapon/battleaxe/neutron

@@ -108,7 +108,7 @@ proc/banner_list()
 		banners += bannergen()
 		i--
 
-proc/banner_output()//N ДА, МЫ ЕБАНУЛИСb!
+proc/banner_output()//N Р”Рђ, РњР« Р•Р‘РђРќРЈР›РРЎb!
 	banner_list()
 	var/x = pick(banners)
 	banners = list()
@@ -191,7 +191,7 @@ can_resize=0;can_minimize=0;titlebar=1"}
 
 ///a majority of random banners
 
-//		var/r_banner1 = "[bannergen(used_markers,src,"center")]"//не ебу, зачем
+//		var/r_banner1 = "[bannergen(used_markers,src,"center")]"//РЅРµ РµР±Сѓ, Р·Р°С‡РµРј
 ///
 
 		darknet_body = {"
@@ -252,5 +252,5 @@ Current cherenkov value: [cherenkov_value] rubles.<BR>
 
 </body>"}
 
-//На деревьях вместо листьев <a href='?src=\ref[src];action=zatar'>вешать будем коммунистов!</a>
+//РќР° РґРµСЂРµРІСЊСЏС… РІРјРµСЃС‚Рѕ Р»РёСЃС‚СЊРµРІ <a href='?src=\ref[src];action=zatar'>РІРµС€Р°С‚СЊ Р±СѓРґРµРј РєРѕРјРјСѓРЅРёСЃС‚РѕРІ!</a>
 

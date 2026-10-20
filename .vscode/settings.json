@@ -1,7 +1,7 @@
 {
-    // The game's source files store Russian text as Windows-1251 (Cyrillic), not UTF-8.
-    // Opening/saving them as UTF-8 garbles that text (in-game strings included).
-    "files.encoding": "windows1251",
+    // On main the source files are UTF-8 (converted from the original Windows-1251).
+    // The bitperfect branch keeps the original Windows-1251 files and settings.
+    "files.encoding": "utf8",
     "files.autoGuessEncoding": false,
     "files.eol": "\n",
     "files.insertFinalNewline": true,

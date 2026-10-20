@@ -31,12 +31,12 @@
 	set name = "press the big red button"
 	set src in view(1)
 	if(!src.droppoint)
-		usr << "\red ÅÃÃÎÃ: no drop point found!"
+		usr << "\red Ð•Ð“Ð“ÐžÐ“: no drop point found!"
 	else if(src.droppoint in range(src.powus / 2.5, src))
 		usr << "\blue BEEEEEP"
 		spawn(0) src.warp()
 	else
-		usr << "\red ÅÃÃÎÃ: power usage is too low!"
+		usr << "\red Ð•Ð“Ð“ÐžÐ“: power usage is too low!"
 		return
 /obj/machinery/warper/verb/checkpower()
 	set name = "check warper powerlevel"

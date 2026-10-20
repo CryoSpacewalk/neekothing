@@ -2,7 +2,7 @@
 	var/brutal_pos = 0
 /mob{var/calming_pos = 0}
 /mob{var/eupho_pos = 0}
-/proc/sanitize_simple(t, repl_chars = list("�" = "&#255;", "\n" = "#", "\t" = "#", "�" = "�"))
+/proc/sanitize_simple(t, repl_chars = list("я" = "&#255;", "\n" = "#", "\t" = "#", "пїЅ" = "пїЅ"))
 	for(var/char in repl_chars)
 		var/index = findtext(t, char)
 		while(index)
@@ -16,10 +16,10 @@
 		rep = "&#x44F;"
 	else
 		rep = "&#255;"
-	var/index = findtext(msg, "�", 1)
+	var/index = findtext(msg, "я", 1)
 	while(index)
 		msg = copytext(msg, 1, index) + rep + copytext(msg, index + 1)
-		index = findtext(msg, "�", 1)
+		index = findtext(msg, "я", 1)
 	return msg
 
 /proc/rhtml_encode(msg, html = 0)
@@ -28,7 +28,7 @@
 		rep = "&#x44F;"
 	else
 		rep = "&#255;"
-	var/c = text2list(msg, "�")
+	var/c = text2list(msg, "я")
 	if(c:len == 1)
 		c = text2list(msg, rep)
 		if(c:len == 1)
@@ -48,7 +48,7 @@
 		rep = "&#x44F;"
 	else
 		rep = "&#255;"
-	var/c = text2list(msg, "�")
+	var/c = text2list(msg, "я")
 	if(c:len == 1)
 		c = text2list(msg, "&#255;")
 		if(c:len == 1)

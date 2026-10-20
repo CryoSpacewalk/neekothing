@@ -37,7 +37,7 @@
 	name = "Russkaya shaverma"
 /obj/poster/bar
 /obj/poster/bar/New()
-	name = pick("Russkaya shaverma", "Blue oyster", "BNHO", "ÏNBO", "RobustovÚ and son", "Spess Gentlemen Club")
+	name = pick("Russkaya shaverma", "Blue oyster", "BNHO", "ÐŸNBO", "RobustovÐª and son", "Spess Gentlemen Club")
 /obj/effect/smite
 	icon_state = "smite"
 /obj/effect/liquid_splash

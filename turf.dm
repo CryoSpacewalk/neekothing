@@ -761,7 +761,7 @@
 	name = "Purificator calling button"
 	icon_state = "pbutton_off"
 	var/canpress = 1
-/obj/machine/smelter{density = 1; name = "Electric smelter"; icon_state = "smelter"; desc = "Стране нужны паровозы, стране нужен металл!"}
+/obj/machine/smelter{density = 1; name = "Electric smelter"; icon_state = "smelter"; desc = "РЎС‚СЂР°РЅРµ РЅСѓР¶РЅС‹ РїР°СЂРѕРІРѕР·С‹, СЃС‚СЂР°РЅРµ РЅСѓР¶РµРЅ РјРµС‚Р°Р»Р»!"}
 /obj/machine/smelter/attack_by(obj/item/I)
 
 	for(var/obj/wire/battery/B in src.loc)

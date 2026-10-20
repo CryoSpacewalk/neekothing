@@ -308,7 +308,7 @@
 
 
 	if(O:anchored)
-		src << "\red ÅÃÃÎÃ: target isn't suitable for operating via U.R.M.O.M.!"
+		src << "\red Ð•Ð“Ð“ÐžÐ“: target isn't suitable for operating via U.R.M.O.M.!"
 		return
 
 	else if(src.camera_anchor)

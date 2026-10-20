@@ -124,7 +124,7 @@
 	var/rep
 	var/nmb = 2
 	while(nmb < length(msg))
-		rep = pick("buzz", "ÿ", "û", "ó", "à", "õûõ", "àáûğâàëã", "óóóó", "àààà", "ûûûû", "áğëáğëáğë")
+		rep = pick("buzz", "Ñ", "Ñ‹", "Ñƒ", "Ğ°", "Ñ…Ñ‹Ñ…", "Ğ°Ğ±Ñ‹Ñ€Ğ²Ğ°Ğ»Ğ³", "ÑƒÑƒÑƒÑƒ", "Ğ°Ğ°Ğ°Ğ°", "Ñ‹Ñ‹Ñ‹Ñ‹", "Ğ±Ñ€Ğ»Ğ±Ñ€Ğ»Ğ±Ñ€Ğ»")
 		if(prob(brutal))
 			msg = copytext(msg, 1, nmb) + rep + copytext(msg, nmb + 1)
 			nmb += length(rep) + 1

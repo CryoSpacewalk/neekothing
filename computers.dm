@@ -138,7 +138,7 @@
 							else if(istype(I, /obj/item/device/uncaller))
 								if(src.on)
 									if(forceshut)
-										usr << "\red EÃÃ0r 0x000000001: please, contact your local FTL travel coordinator to remove the recall block"
+										usr << "\red EÐ“Ð“0r 0x000000001: please, contact your local FTL travel coordinator to remove the recall block"
 										return
 									else
 										shuttlerecall()
@@ -172,7 +172,7 @@
 			shuttlecall()
 
 		else if(forceshut)
-			usr << "\red EÃÃ0r 0x000000001: please, contact your local FTL travel coordinator to remove the recall block"
+			usr << "\red EÐ“Ð“0r 0x000000001: please, contact your local FTL travel coordinator to remove the recall block"
 			return
 		else
 			shuttlerecall()
