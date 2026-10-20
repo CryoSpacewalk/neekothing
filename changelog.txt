@@ -1,0 +1,100 @@
+27.10.18<HR>
+ - Moving the whole thing onto v. 512<BR>
+ - Fixed chemical reactions bug: now reactions seem to work as intended<BR>
+ - Baikonur-5 caverns are even bigger than before now. Also, I'm working on chasm, hidden in the icy bowels of this giantic asteroid<BR>
+
+28.10.18<HR>
+ - Fixed clientless mobs turning immortal<BR>
+
+06.11.18<HR>
+ - Fixing old bugs and finding new ones: you're no longer able to dublicate monitors via installing and removing them from consoles<BR>
+ - I've tried to fix cryptocurrency reaching negative values. We'll see whatever it worked or not<BR>
+ - Dead roosters now will die for good instead of wandering around<BR>
+ - Also, roosters now cluck less frequently<BR>
+
+07.11.18<HR>
+ - Hunger is nerfed: now you can stay satiated for twice as long as before<BR>
+ - Smoking mixes and weed are a bit more euphoretic now. They will make you feel notoriously hungry, however<BR>
+- Euphoria prices for all of the cognipowers are cut in half. Well, except blink: it is cheap already<BR>
+- Hodovochkas biting speed is nerfed<BR>
+
+14.11.18<HR>
+ - Finally: you're able to shoot stuff point-blank. You have to click on the turf, however: clicking on objects and mobs will cause you to beat them with your gun<BR>
+
+17.11.18<HR>
+ - Removed head perks, since half of them was unbalanced and the other half was completely useless. Probably will remake them later<BR>
+ - Working on hodovochka-related memory leak<BR>
+
+06.01.19<HR>
+ - Popobawa is a bit slower now<BR>
+ - As for now, I'm completely rewriting hodovochkas<BR>
+
+08.01.19<HR>
+ - FIxed bug with messages being announced twice<BR>
+ - Still working on hodovochkas. Now they're more dangerous and a bit less laggy<BR>
+
+14.01.19<HR>
+ - Doors are partially resprited<BR>
+ - Popobawa is resprited and acts a bit slower (but still very fast)<BR>
+ - Working on big mnogohodovochkas<BR>
+- Mothers of Mnogohodovochkas are less or more functional. They're fat, lazy and drowsy, but at least they're good at it<BR>
+- Maximumattack still works on door respriting. All hail @maxiumattack !<BR>
+- Fixed bug which prevented body scanners from detecting neurosyphilis<BR>
+- Hodovochkas are a bit more resistent to explosions now: big ass bombs still will take them out, but single hand grenade is unlikely to completely devastate a swarm of them<BR>
+- Hunger is unable to outright kill you now. It will damage you, however<BR>
+
+15.01.19<HR>
+ - Caphopper ticks now can be killed with fire, chlorine, smoke or toxin. They're quite resilent to them, however<BR>
+ - A bit nerfed hodovochkas toughness: now you can blow'em up easier; also, anti-demon items such as petrine cross or bat will give hodovochkas extra damage if you feel euphoretic<BR>
+ - Now our drugged militioneers have an embrasure and mini-armory in front of Baikonur-5 gate so that they can defend themselves during sieges of veterans, hodovochkas and other horrors. Do note that armory can be opened only by one of the heads, prosecutor or cap<BR>
+ - Many of the darknet hidden packages (and soulbreaker teleportation sites) are at the Baikonur-5 now. Stop running around maint and get outside for a while, you lazy junkie!<BR>
+ - Profs starting on Baikonur-5 now will recieve a short guide (go south until you reach Baikonur gate)<BR>
+
+16.01.19<HR>
+ - Hammer now can be used to construct and rotate wooden furniture<BR>
+ - Veterans and big hodovochkas will topple furniture and crush tower-caps around them<BR>
+ - Ice can be molten not only by welding torches, but also by blasters and igniters<BR>
+ - New descriptions for stackable materials<BR>
+ - Attacking window with welding torch now will carefully remove it instead of breaking apart. Engineering profs which donated for intensive personnel training can remove windows by hitting it with any item, however<BR>
+
+04.02.19<HR>
+ - Fixed bug with ghosts of drugged people hallucinating after death<BR>
+ - Added a tiny bit of new hallucinations for delirium and dissociation<BR>
+- Throwing sharp items at people will cause them to bleed now<BR>
+
+06.02.19<HR>
+ - New hotkeys: PageUp for changing hands, PageDown for breaking pull, Insert for using item in hand, Delete for consuming it, Shift for entering throw mode and starting to throw stuff around and Alt for blinking your eyes (yep, this one is important!)<BR>
+
+07.02.19<HR>
+- Added more visuals for dissociative druggies<BR>
+- Finally: ghosts are named as "Person's ghost" so that you will not confuse them for corpses<BR>
+
+08.02.19<HR>
+ - Added tic-tac-toe arcade machine<BR>
+
+08.03.19<HR>
+ - Now purificator don't have to see spectres, veterans, demons or hodovochkas to detect invasion: peppersteak.ogg (yes, from OFF) will play in his head as soon as he will come closer to any of the supernatural hazards<BR>
+- Added 5-Bromo-DMT: tryptamine psychedelic with sedative props<BR>
+- Added psychedelic sponges which contain said 5-Bromo-DMT<BR>
+
+09.03.19<HR>
+ - Added lepista nuda and sponges to the list of randomly spawning wild shrooms. Also, wild mushrooms now have normal names instead of "killer" or "regen"<BR>
+
+11.03.19<HR>
+ - Added red mercury which can be used to make antennae<BR>
+ - Added new locations on Baikonur-5 to make asteroid exploration more interesting<BR>
+ - Added bombus lucidum: a giant glowing bumblebee slowly floating through the darkness of Baikonur-5. It is edible then cooked on fire, electric range, smelter or with blaster shots, but even fried bombuses may have some side-effects on eater<BR>
+ - Researchers now have a bumblebee instead of one of the boring roosters<BR>
+ - Also, you can milk bumblebees for toxin, sugar and other precious chems. Do note that they still can (and will) sting you!<BR>
+
+12.03.19<HR>
+ - Bombus lucidum now can be fed with mushrooms to produce highly-nutrious honey<BR>
+ - Added tripwires, made from gastanks. They aren't invisible, but kinda difficult to spot<BR>
+
+13.03.19<HR>
+ - Added tripwire assembly guide into one of in-game books<BR>
+ - Neekomen drugged out on hallucinogens are able to detect tripwires and other similar traps<BR>
+ - Fixed console (dis)assembly: now you can easily disassemble a comp with screwdriver and wrench and assemble it somewhere else (or sell precious electronics for cocaine)<BR>
+
+15.03.19<HR>
+ - Added blueprints: somewhat expensive books containing recipes for misc assemblies, from guns to jetbikes to Xom communicators<BR>

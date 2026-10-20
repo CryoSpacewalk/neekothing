@@ -1,0 +1,8 @@
+{
+    // The game's source files store Russian text as Windows-1251 (Cyrillic), not UTF-8.
+    // Opening/saving them as UTF-8 garbles that text (in-game strings included).
+    "files.encoding": "windows1251",
+    "files.autoGuessEncoding": false,
+    "files.eol": "\n",
+    "editor.insertSpaces": false
+}

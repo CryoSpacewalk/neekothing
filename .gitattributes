@@ -1,0 +1,42 @@
+* text=auto
+
+## Enforce text mode and LF line breaks
+*.bat text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.dm text eol=lf whitespace=indent-with-non-tab
+*.dme text eol=lf
+*.dmf text eol=lf
+*.htm text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.jsx text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.scss text eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
+*.svg text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+## Enforce binary mode
+*.bmp binary
+*.dll binary
+*.dmb binary
+*.exe binary
+*.gif binary
+*.jpg binary
+*.png binary
+*.so binary
+
+## Exceptions - keep these LAST (later lines override the *.html / *.js rules above)
+## Game resources sent to players: the .dmb stores a checksum of their exact bytes,
+## so they must keep the original CRLF line endings for the bit-perfect build.
+tictactoe.html text eol=crlf
+tictactoe.js text eol=crlf
