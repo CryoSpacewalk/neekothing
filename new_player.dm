@@ -27,7 +27,7 @@
 
 	var/changelog_sets = "window=Welcome, damn it!;display=1;\n\tsize=600x700;border=0;can_close=1;\n\tcan_resize=1;can_minimize=0;titlebar=1"
 
-	src << browse(file2text("changelog.txt"), changelog_sets)
+	src << browse(HTML_SKELETON(file2text("changelog.txt")), changelog_sets)
 
 
 

@@ -52,7 +52,7 @@
 	for(var/TXT in src.things)
 		if(!istype(TXT, /atom))
 			T = addtext(T, "<I>[TXT]</I><BR>")
-	usr << browse(T)
+	usr << browse(HTML_SKELETON(T))
 
 /obj/machine/fabricator/attack_by(obj/item/M)
 	if(istype(M, /obj/item/material/sheet))

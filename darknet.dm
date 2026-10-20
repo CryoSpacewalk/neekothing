@@ -148,7 +148,7 @@ proc/banner_output()//N ДА, МЫ ЕБАНУЛИСb!
 
 
 
-		usr << browse(darknet_body,darknet_set)
+		usr << browse(HTML_SKELETON(darknet_body),darknet_set)
 
 
 ////////////

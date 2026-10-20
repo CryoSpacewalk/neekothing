@@ -201,7 +201,7 @@
 				txt += "<font color = blue>[M.realname] (a dead One)</font><BR>"
 
 	spawn(0)
-		usr << browse(txt)
+		usr << browse(HTML_SKELETON(txt))
 
 		var/elist = list()
 		for(var/obj/landmark/heck/H in world)

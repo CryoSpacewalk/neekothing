@@ -99,7 +99,7 @@ proc/creditgen()
 			funfacts-=factofaday
 			credit_body += "*[factofaday]?<BR>"
 			i--
-			world << browse(credit_body,credit_sets)
+			world << browse(HTML_SKELETON(credit_body), credit_sets)
 
 //FUN FACTS
 
