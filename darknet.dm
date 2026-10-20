@@ -142,6 +142,8 @@ proc/banner_output()//N ДА, МЫ ЕБАНУЛИСb!
 		usr << browse_rsc('banner_device.gif')
 		usr << browse_rsc('banner_phenik.gif')
 		usr << browse_rsc('banner_shrooms.gif')
+		usr << browse_rsc('banner_booze.gif')
+		usr << browse_rsc('banner_magick.gif')
 //		usr << browse_rsc('banner_grow.gif')
 
 

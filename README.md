@@ -19,19 +19,21 @@ It seems to be based on OpenSS13, or perhaps the 2009 Goon SVN or some other ear
 
 ## Branches
 
-- **main** (this branch): modernized for BYOND 516. Source converted to UTF-8 with all Russian text preserved, the old Windows-1251 text workarounds removed, and small fixes so it compiles on BYOND 516. The speaker (eSpeak) works.
+- **main** (this branch): modernized for BYOND 516. Source converted to UTF-8 with all Russian text preserved, the old Windows-1251 text workarounds removed, and small fixes so it compiles on BYOND 516. The speaker (eSpeak) works, and the darknet's alcohol and occult banners, which koto never sent to players, now show.
 - **bitperfect**: the exact decompilation. Compiled with BYOND 512.1466 it is byte-for-byte identical to kotowasiy’s ‘december neek’ release, with all original bugs and quirks preserved. See that branch's README. Build it from a fresh clone or the ZIP download; if you switch to it from main in the same folder, refresh the files first: `git rm -r --cached -q . && git reset --hard`
 
 ## About the decompilation
 
-The source was reconstructed from the compiled neek.dmb. Only credits.dm, darknet.dm, serpent_code.dm and snek.dm are koto's original files, exactly as he wrote them (see the html folder, kept as found in the host files). Comments and formatting elsewhere are not original, but the reconstructed source compiles to a neek.dmb byte-for-byte identical to the original (bitperfect branch), so its behavior and functionality are identical to the original game. The dup0–dup6 folders and zz_types_tail.dm exist because the original had several files with the same name; they reproduce its file layout.
+The source was reconstructed from the compiled neek.dmb. Only credits.dm, darknet.dm, serpent_code.dm and snek.dm are koto's original files, exactly as he wrote them (on main they are converted to UTF-8 and darknet.dm has small fixes; the untouched originals are in the html folder on the bitperfect branch and in the host files). Comments and formatting elsewhere are not original, but the reconstructed source compiles to a neek.dmb byte-for-byte identical to the original (bitperfect branch), so its behavior and functionality are identical to the original game. The dup0–dup6 folders and zz_types_tail.dm exist because the original had several files with the same name; they reproduce its file layout.
 
 Check Github Releases for the host files, which include koto's .rsc file containing unused and old assets from development which aren't actually referenced by the final .dmb.
 
 ## Speaker (eSpeak)
 
 The "speaker" item (speaker.dm) uses eSpeak 1.48 (https://espeak.sourceforge.net/). Copy the whole eSpeak folder, including espeak-data, next to neek.dmb, so it looks like /neekothingfolder/eSpeak/command_line/espeak.exe
+
 Neekothing uses the "en-us" and "ru" eSpeak voices. DreamDaemon must run the game in Trusted mode, or BYOND won't start eSpeak.
+
 In koto's original version the speaker could not work on Windows (wrong path, and Russian text got garbled); main fixes this.
 
 Runtimes are logged to runtimez.txt
