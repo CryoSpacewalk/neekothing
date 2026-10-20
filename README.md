@@ -1,6 +1,8 @@
 # neekothing
 Decompiled source code of the esoteric Russian BYOND game Neekothing.
 
+## This game is not suitable for those under 18. If you are not an adult, please click away now.
+
 ### DISCLAIMER: Neekothing features edgy humor and scary imagery. This decompilation is for preservation and educational purposes. I do not and have never condoned violence, drug use, or any other obscene behavior. Such content does not comprise the majority of Neekothing; however it is being preserved as-is, to match the author (kotowasiy's) release of the game. Some players may find the "nightmares" in-game to be very disturbing, shocking, and offensive. Play at your own risk.
 
 Neekothing is an obscure Russian BYOND game developed by kotowasiy, a Russian developer associated with hydrated12/"Randy Sandy", the developer of Lifeweb.
