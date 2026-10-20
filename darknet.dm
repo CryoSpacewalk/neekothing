@@ -118,7 +118,7 @@ proc/banner_output()//N ДА, МЫ ЕБАНУЛИСb!
 
 	attack_self()
 
-		var/list/used_markers() = list()//list of the used banners so all banners will be unique
+		var/list/used_markers = list()//list of the used banners so all banners will be unique
 
 		dnet_change(used_markers)
 
