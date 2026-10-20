@@ -4,5 +4,7 @@
     "files.encoding": "windows1251",
     "files.autoGuessEncoding": false,
     "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
     "editor.insertSpaces": false
 }

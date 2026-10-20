@@ -34,9 +34,3 @@
 *.jpg binary
 *.png binary
 *.so binary
-
-## Exceptions - keep these LAST (later lines override the *.html / *.js rules above)
-## Game resources sent to players: the .dmb stores a checksum of their exact bytes,
-## so they must keep the original CRLF line endings for the bit-perfect build.
-tictactoe.html text eol=crlf
-tictactoe.js text eol=crlf
