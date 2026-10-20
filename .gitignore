@@ -2,3 +2,5 @@
 *.rsc
 *.vscode/*
 runtimez.txt
+speech.txt
+sound.wav
