@@ -21,7 +21,7 @@
 		spawn(30)
 
 
-			rapist = 1
+			grapist = 1
 			src.traitor = 1
 			src << "\red \bold You're the capitalistic traitor!"
 			src << "\red \bold Complete your objectivities in all costs."

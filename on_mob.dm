@@ -45,7 +45,7 @@
 					if(!M.sleeps)
 						M << "\blue \bold [src.name] shouts:I have no profession onboard!"
 		else if(prob(50))
-			if(src.faggot)
+			if(src.maggot)
 				for(var/mob/M in hearers(src))
 					if(!M.sleeps)
 						M << "\blue \bold [src.name] shouts: I am a homosexualist!"
@@ -1255,7 +1255,7 @@
 	rid = "rhinestones"
 /datum/on_mob/rhinestones
 /datum/on_mob/rhinestones/react(quaziamt, R, mob/M)
-	if(quaziamt >= 1 && M:faggot)
+	if(quaziamt >= 1 && M:maggot)
 		M:heal(rand(1, 3), "brute")
 		M:heal(1, "organ")
 		if(prob(66))
@@ -9353,9 +9353,9 @@
 	rid = "fagenerite"
 /datum/on_mob/fagenerite
 /datum/on_mob/fagenerite/react(quaziamt, R, mob/M)
-	if(!M:faggot)
+	if(!M:maggot)
 		M << "\blue \bold You feel more attracted to the people of the same gender."
-		M:faggot = 1
+		M:maggot = 1
 	else if(R:amount >= 1)
 		M:heal(pick(0, 1), "brute")
 		M:heal(pick(0, 1), "organ")
@@ -9494,7 +9494,7 @@
 /datum/on_mob/nitrogen_tourettinide
 /datum/on_mob/nitrogen_tourettinide/react(quaziamt, R, mob/M)
 	if(prob(50) && quaziamt >= 0.1)
-		M:say(pick("MAMU EBAL", "FUCK", "SHIT", "HUI", "PIZDA", "SUKA", "PAUK EBANIY", "SASAI", "YOBA", "GAYNIGGER", "бля", "химик дай ДОБа", "капитан предатель", "хуй", "пизда", "колбаса", "спасите убивают", "капитан гондон", "Я сосу хуи", "ХОНК", "херп дерп", "Я ебал твою мать", "трейтор с бомбой у медблока", "СОЮЗ НЕРУШИМЫЙ РЕСПУБЛИК СВОБОДНЫХ", "\green идиот, убейте меня кто-нибудь", "ya twoy mamku ebal suka", "huli ty tvorish pidor ebaniy"))
+		M:say(pick("MAMU EBAL", "FUCK", "SHIT", "HUI", "PIZDA", "SUKA", "PAUK EBANIY", "SASAI", "YOBA", "GAY[reverse_text("REGGIN")]", "бля", "химик дай ДОБа", "капитан предатель", "хуй", "пизда", "колбаса", "спасите убивают", "капитан гондон", "Я сосу хуи", "ХОНК", "херп дерп", "Я ебал твою мать", "трейтор с бомбой у медблока", "СОЮЗ НЕРУШИМЫЙ РЕСПУБЛИК СВОБОДНЫХ", "\green идиот, убейте меня кто-нибудь", "ya twoy mamku ebal suka", "huli ty tvorish pidor ebaniy"))
 		if(quaziamt >= 8 && prob(25))
 			M:says_xynta += 10
 			M:damaga(1, "organ")

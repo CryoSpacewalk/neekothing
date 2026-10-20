@@ -798,7 +798,7 @@ var/list/abyssal_levels = list(7)
 		src.thp -= 5
 
 	if(("hui" in usr.mutations) && prob(10))
-		usr.show_message("\red \bold [usr.name] lashes [src.name] with his bloated penis!", "\red You lash [src.name] with your cock! So much fun!")
+		usr.show_message("\red \bold [usr.name] lashes [src.name] with his bloated [reverse_text("sinep")]!", "\red You lash [src.name] with your cock! So much fun!")
 		usr.libido += 10
 		src.thp -= 5
 

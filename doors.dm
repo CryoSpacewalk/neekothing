@@ -242,7 +242,7 @@
 	else if(src.material == "STEEL" && (usr:item:charges && istype(usr.item, /obj/item/tool/torch) || (istype(usr.item, /obj/item/tool/hydraulic_cutters) || (istype(usr.item, /obj/item/tool/axe) || (istype(usr.item, /obj/item/weapon/battleaxe) || istype(usr.item, /obj/item/tool/robot/robosaw))))))
 		usr.show_message("\red \bold [usr.name] removes [src.name] reinforcements!", "\blue You remove [src.name] reinforcements, turning it into a common door!")
 		new /obj/item/material/sheet(src.loc)
-		src.desc = "This door reinforcements is removed, so its lock can be raped and you don't need an empty hand to open it."
+		src.desc = "This door reinforcements is removed, so its lock can be [reverse_text("epar")]d and you don't need an empty hand to open it."
 		src.material = "IRON"
 		src.melt_o = new /obj/overlay/doormelt()
 		if(closed)
@@ -389,7 +389,7 @@
 		return
 
 	new /obj/item/material/sheet(src.loc)
-	src.desc = "This door reinforcements is removed, so its lock can be raped and you don't need an empty hand to open it."
+	src.desc = "This door reinforcements is removed, so its lock can be [reverse_text("epar")]d and you don't need an empty hand to open it."
 	src.material = "IRON"
 	src.melt_o = new /obj/overlay/doormelt()
 	if(closed)

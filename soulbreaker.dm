@@ -347,8 +347,8 @@
 
 	bluespace_shifted = 1
 
-	if(!("Bluespace-rape" in csecond))
-		csecond += "Bluespace-rape"
+	if(!("Bluespace-[reverse_text("epar")]" in csecond))
+		csecond += "Bluespace-[reverse_text("epar")]"
 
 	spawn(50)
 

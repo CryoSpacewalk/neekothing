@@ -2,7 +2,7 @@
 
 /mob/var/fixlibido = 0
 
-/mob/var/raped = 0
+/mob/var/graped = 0
 /mob/var/casts_shadow = 1
 /mob/popobava
 	icon = 'grafon/popobawa_new.dmi'
@@ -10,8 +10,8 @@
 	hepe = 150
 	cult = 1
 	mat = "ether"
-	rapist = 1
-	faggot = 1
+	grapist = 1
+	maggot = 1
 	empowered = 4
 	fixlibido = 1
 	libido = 90
@@ -89,17 +89,17 @@
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					smartblink(20, 10, loc)
-				else if(M:raped)
+				else if(M:graped)
 					src.say("Looks like I've already... visited this folk. Goodbye.")
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					smartblink(20, 10, loc)
 				else
-					src.rape(M)
+					src.grape(M)
 	sleep(0)
 	for(var/mob/M in hearers(src))
-		if(!M.psiactive && (!M.cult && (M.mat != "ether" && (!M:raped && prob(2)))))
+		if(!M.psiactive && (!M.cult && (M.mat != "ether" && (!M:graped && prob(2)))))
 			new /obj/effect/warp_splash(loc)
 			spawn(0)
 				loc = M.loc
@@ -107,12 +107,12 @@
 				if(!M.sleeps)
 					M << "\red [src.name] appears before your eyes!"
 	for(var/mob/M in view(src))
-		if(prob(3) && (!M.cult && (!M.psiactive && (M.mat != "ether" && !M:raped))))
+		if(prob(3) && (!M.cult && (!M.psiactive && (M.mat != "ether" && !M:graped))))
 			M.smite()
 	src.stalk(95, 0, 1, 1, 0, 0)
 	spawn(2) src.popo_live()
 
-/mob/popobava/proc/rape(mob/M)
+/mob/popobava/proc/grape(mob/M)
 	if(M:clothes)
 		if(istype(M:clothes, /obj/item/clothes/purificator))
 			if(prob(10))
@@ -142,7 +142,7 @@
 		spawn(0)
 			src.say("Thanks for the good company, [M:realname].")
 			smartblink(20, 10, loc)
-			M:raped = 1
+			M:graped = 1
 
 	sleep(1)
 

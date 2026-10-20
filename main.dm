@@ -269,7 +269,7 @@
 	spawn(10)
 		usr << ""
 		usr << "\blue \bold BREAKING NEWS"
-		usr << "\blue \bold All [pick("bourgeous", "dissidents", "capitalists", "spies", "traitors", "bloggers")] are [pick("faggots", "swine", "roosters", "gay", "fuckers", "liberals")]!"
+		usr << "\blue \bold All [pick("bourgeous", "dissidents", "capitalists", "spies", "traitors", "bloggers")] are [pick("[reverse_text("toggaf")]s", "swine", "roosters", "gay", "fuckers", "liberals")]!"
 /obj/item/gib
 	size = 2
 	name = "bloody mess"

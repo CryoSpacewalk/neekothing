@@ -171,7 +171,7 @@
 			if(M.class == "man" && M.mat == "flesh")
 				src << "[M.name] is probably a kind and joyous person deep in his soul."
 				src.euphoria += 5
-				if(src.faggot)
+				if(src.maggot)
 					src.libido += 5
 			else if(M.class == "robot")
 				src << "Robots are cool folks to hang with. [M.name] is probably a nice person, he just need somebody to talk with him."
@@ -209,8 +209,8 @@
 		src.untie()
 
 
-	if(src:raped && prob(5))
-		src.say(pick("МЕНЯ ПИДОРНУЛ ПОПОБАВА", "I WAS RAPED BY POPOBAVA", "А мен\green вот, кстати, Попобава ебал", "Как? Вы не слышали? Мен\green изнасиловал Попобава!"))
+	if(src:graped && prob(5))
+		src.say(pick("МЕНЯ ПИДОРНУЛ ПОПОБАВА", "I WAS [reverse_text("EPAR")]D BY POPOBAVA", "А мен\green вот, кстати, Попобава ебал", "Как? Вы не слышали? Мен\green изнасиловал Попобава!"))
 
 
 
@@ -420,7 +420,7 @@
 				src.torment(3)
 
 			if(("hui" in mutations) && prob(2))
-				src << "\blue Your penis twitches."
+				src << "\blue Your [reverse_text("sinep")] twitches."
 				if(src.libido < 20)
 					src.libido = 20
 				else if(src.libido < 99)

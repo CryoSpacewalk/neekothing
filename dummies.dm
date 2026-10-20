@@ -9,7 +9,7 @@
 	src.adv_visuals()
 	src.update_sprite()
 	src.dir = pick(1, 2, 8, 4)
-	src.faggot = 1
+	src.maggot = 1
 
 /mob/cultist
 
@@ -35,12 +35,12 @@
 	src.adv_visuals()
 	src.update_sprite()
 	src.dir = pick(1, 2, 8, 4)
-	src.faggot = 1
+	src.maggot = 1
 /mob
 	name = "Wasya"
 /mob/dummy
 /mob/dummy/popo
-	raped = 1
+	graped = 1
 /mob/dummy/popo
 /mob/pedalspawn
 	limbs = list(new /obj/limb/head, new /obj/limb/r_hand, new /obj/limb/l_hand, new /obj/limb/r_leg, new /obj/limb/l_leg)

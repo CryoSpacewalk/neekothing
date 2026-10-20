@@ -1,5 +1,6 @@
 #define DEBUG
 #include "_html_assistant.dm"
+#include "_reverse_text.dm"
 #include "atoms.dm"
 #include "debug.dm"
 #include "doors.dm"

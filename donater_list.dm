@@ -55,7 +55,7 @@ var/list/donat_lucky = list("kotowasiy")
 	src << ""
 	src << "\red \bold One way or another, you've managed to master your skills in forging documents and recipe cards. You even have smuggled medical stamp (check your pocket!) here, so you're able to forge and reforge recipe cards."
 
-	if(src.faggot)
+	if(src.maggot)
 		src << "\red \bold They don't let homosexuals onto frontier complexes due to some dumb restriction, but you've managed to fool commission with fake certificate."
 
 	src.equip_pocket2(new /obj/item/stamp())

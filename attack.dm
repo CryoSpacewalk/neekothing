@@ -55,11 +55,11 @@
 				stun(2)
 
 		if(("hui" in usr:mutations) && prob(20))
-			usr:show_message("\red \bold [usr:name] lashes [src.name] with his bloated penis!", "\red You lash [src.name] with your cock! So much fun!")
+			usr:show_message("\red \bold [usr:name] lashes [src.name] with his bloated [reverse_text("sinep")]!", "\red You lash [src.name] with your cock! So much fun!")
 			usr:libido += 10
 			damaga(2, "brute")
 			if(prob(50 - usr:armor * 3))
-				src << "\red Damn, you're kicked down with [usr:name] disfigured penis!"
+				src << "\red Damn, you're kicked down with [usr:name] disfigured [reverse_text("sinep")]!"
 				stun(2)
 
 		if(("horns" in usr:mutations) && prob(15))
@@ -404,11 +404,11 @@
 			src.stun(2)
 
 		if(("hui" in usr.mutations) && prob(20))
-			usr.show_message("\red \bold [usr.name] lashes [src.name] with his bloated penis!", "\red You lash [src.name] with your cock! So much fun!")
+			usr.show_message("\red \bold [usr.name] lashes [src.name] with his bloated [reverse_text("sinep")]!", "\red You lash [src.name] with your cock! So much fun!")
 			usr.libido += 10
 			src.damaga(2, "brute")
 			if(prob(50 - armor * 3))
-				src << "\red Damn, you're kicked down with [usr.name] disfigured penis!"
+				src << "\red Damn, you're kicked down with [usr.name] disfigured [reverse_text("sinep")]!"
 				src.stun(2)
 
 		if(("horns" in usr.mutations) && prob(15))

@@ -229,7 +229,7 @@
 			src.mob.stun(1)
 		else
 			if(("hui" in mob:mutations) && prob(1))
-				src.mob << "\red You stumble on your giant penis and fall!"
+				src.mob << "\red You stumble on your giant [reverse_text("sinep")] and fall!"
 				mob:stun(1)
 			else
 				if(prob((src.mob.drunk - 1) * 15))

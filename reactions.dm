@@ -416,7 +416,7 @@
 	r2 = "ethanol"
 /datum/reaction/fagenerite
 /datum/reaction/fagenerite/react(R1, R2, obj/location)
-	reaction_message(location, "\red The solution turns into a liquid faggotry!")
+	reaction_message(location, "\red The solution turns into a liquid [reverse_text("toggaf")]ry!")
 	two_to_half(R1, R2, location, "fagenerite", "fagenerite", location:temp)
 /datum/reaction/magnaneska
 	id = "manganese+potassium"

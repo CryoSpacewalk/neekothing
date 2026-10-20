@@ -308,7 +308,7 @@
 			if("chromosome" in M.mutations)
 				M << "\blue You feel ticklish a bit. And you surely don't know why everybody around is so worried."
 			else if(M:clothes:nopsi)
-				M << "\blue Something is trying to rape your mind, but you're protected against stuff like this."
+				M << "\blue Something is trying to [reverse_text("epar")] your mind, but you're protected against stuff like this."
 			else
 				M << "\red You see a fuckload of horrible visages dancing around you."
 				if(M.calm >= 10)

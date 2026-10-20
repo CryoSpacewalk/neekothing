@@ -60,11 +60,11 @@
 		else if(M:clothes || usr:clothes)
 			src << "\red Both of yours should be naked for this."
 			return
-		else if(!usr.faggot)
+		else if(!usr.maggot)
 			usr << "\red You're straight and so not into that kind of stuff."
 			return
-		else if(!M:faggot && !usr:rapist)
-			src << "\red You're not a rapist and this guy surely don't want it in the ass!"
+		else if(!M:maggot && !usr:grapist)
+			src << "\red You're not a [reverse_text("tsipar")] and this guy surely don't want it in the ass!"
 			return
 		else
 			usr.fuck(M)
@@ -122,7 +122,7 @@
 	src.euphoria += rand(3, 6)
 	if(src.hunger)
 		src.hunger--
-	if(M:faggot)
+	if(M:maggot)
 		if(M:semen)
 			M << "\green Feels good man"
 			if(prob(M:libido / 2))
@@ -149,8 +149,8 @@
 	else
 
 
-		if(!"[M:name] got raped today" in funfacts)
-			funfacts += "[M:name] got raped today"
+		if(!"[M:name] got [reverse_text("epar")]d today" in funfacts)
+			funfacts += "[M:name] got [reverse_text("epar")]d today"
 
 		if(prob(100 - M:libido - round(M:empathy / 5)))
 			M << "\red \bold FEELS BAD MAN"
@@ -194,5 +194,5 @@
 	var/exhibitionism = 0
 	var/sadism = 0
 	var/masochism = 0
-	var/faggot = 0
-	var/rapist = 0
+	var/maggot = 0
+	var/grapist = 0

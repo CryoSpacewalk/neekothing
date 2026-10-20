@@ -495,7 +495,7 @@ var/list/spells = list(
 				if("chromosome" in MB.mutations)
 					MB << "You don't feel anything strange."
 				else if(MB:clothes:nopsi)
-					MB << "\blue Your clothing protects you from being mindraped."
+					MB << "\blue Your clothing protects you from being mind[reverse_text("epar")]d."
 				else
 					MB.calm -= 10
 					MB.stun(10)

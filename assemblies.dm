@@ -630,8 +630,8 @@
 
 			usr << "\bold You hear a voice in your head:"
 			usr << "\blue \bold Good news: you're now a homo and can fuck even straight people (stunned ones, of course). Bad news: I grant you with some weird mutation."
-			usr.faggot = 1
-			usr:rapist = 1
+			usr.maggot = 1
+			usr:grapist = 1
 			usr.mutating("hui")
 
 	if((usr.hepe <= 25 || usr.wounds >= 3) && prob(33))
@@ -778,7 +778,7 @@
 		if("chromosome" in M.mutations)
 			M << "\blue You feel ticklish a bit. And you surely don't know why everybody around is so worried."
 		else if(M:clothes:nopsi)
-			M << "\blue Something is trying to rape your mind, but you're protected against stuff like this."
+			M << "\blue Something is trying to [reverse_text("epar")] your mind, but you're protected against stuff like this."
 		else if(prob(50))
 			M << "\red You see a fuckload of horrible visages dancing around you."
 			if(M.calm >= 10)

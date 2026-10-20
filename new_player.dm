@@ -137,9 +137,9 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 	if(src.client.forger)
 		switch(alert("Have you faked your heterosexuality certificate?", , "Yes", "No"))
 			if("Yes")
-				faggot = 1
+				maggot = 1
 			if("No")
-				faggot = 0
+				maggot = 0
 
 
 	sleep(0)
@@ -187,13 +187,13 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 		if(spychka == 1 && slbrkr_needed)
 			profchoice = "slbrkr"
 			src.client.forger = 0
-			faggot = 0
+			maggot = 0
 			slbrkr_needed = 0
 
 		if(spychka == 2 && nukebot_needed)
 			profchoice = "robot"
 			src.client.forger = 0
-			faggot = 0
+			maggot = 0
 			nukebot_needed = 0
 
 		if(spychka == 3 && !baryga)
@@ -204,7 +204,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 			if(castlist.len >= 5)
 				profchoice = "angel"
 				src.client.forger = 0
-				faggot = 0
+				maggot = 0
 			else
 				profchoice = "baryga"
 				baryga = 1
@@ -229,7 +229,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 
 	var/M = new /mob()
 	M:realkey = ckey
-	M:faggot = faggot
+	M:maggot = maggot
 	src.client << sound('null.ogg', wait = 0, channel = 666)
 
 	if(mutation_choice)
@@ -237,7 +237,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 
 	if(profchoice == "baryga")
 		baryga_needed = 0
-		faggot = 0
+		maggot = 0
 		src.client.mule = 0
 
 	M:initialize_profa(headchoice, profchoice, src)
@@ -503,7 +503,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 		if("botanist")
 			src << "\red \bold You're a botanist. You can grow misc stuff in your hydro trays for medical, griefful or culinary reasons. Use your extractor to process plants into seeds and chemicals."
 		if("security major")
-			src << "\red \bold You're a security major. You have a baton for beating criminal scum and a jail for keeping live prisoners or hide dead bodies. Do not let people to steal, kill, rape, vandalize, release chlorine and so."
+			src << "\red \bold You're a security major. You have a baton for beating criminal scum and a jail for keeping live prisoners or hide dead bodies. Do not let people to steal, kill, [reverse_text("epar")], vandalize, release chlorine and so."
 		if("researcher")
 			src << "\red \bold You're the researcher. It is quite difficult to say clearly what should you do. Broadly speaking, you should try to understand how the things work and then try to use your knowledge. You can found some foul roosters for testing chemicals and other things at the east of your arrival. Also, feel free to roam around the station if you think what you can find something interesting, but be aware of captain and security!"
 		if("doctor")
@@ -519,7 +519,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 		if("captain")
 			src << "\red \bold You're local tyrant. Do not let any of those fuckers around to kill someone or break something and try to stay alive yourself. Your can make some extra holes in the bodies of agressive or dangerously retarded crewmen with your blaster or cut them apart with your very special energy axe. Also, don't let the people to steal your very own golden key (they WILL try to steal it if they know what it is). If you get hurt, try to found a doctor, a fine medicine or at least some food. And yeah, enjoy."
 		if("operator")
-			src << "\red \bold You're an operator. You responsibility is so huge that you even don't allowed to leave your workplace without captain's permission. You have a lot of machinery for remote control around the station and a private fortress floating in the space near the main station. It is your duty to observe the goddamn station and prevert those traitors, faggots and retards from destroying it."
+			src << "\red \bold You're an operator. You responsibility is so huge that you even don't allowed to leave your workplace without captain's permission. You have a lot of machinery for remote control around the station and a private fortress floating in the space near the main station. It is your duty to observe the goddamn station and prevert those traitors, [reverse_text("toggaf")]s and retards from destroying it."
 		if("cognitologist")
 			src << "\red \bold You're a cognitologist. You're trying to awake hidden reserves of mind with help of special machinery and psychoactive substations. Try not to destroy your brain with psychedelics and avoid overdosing!"
 		if("psychiatrist")
@@ -527,7 +527,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 		if("purificator")
 			src << "\red \bold You're a purificator. Folks from security may be good at beating the shit out of traitors and rogue robots, but they have no chance fighting multiple biohazards, infernal stalinists intervention or full-scale veteran invasion. Seriously, most folks don't even know what kind of stuff may invade their cozy little station at any time! \n And this is why you're here. Use your suit and bat to deal with hazards of both biological (amoebas and bladeweeds) and esoterical (spectres, rampaging mystics and beasts of Abyss) nature."
 		if("prosecutor")
-			src << "\red \bold You're a prosecutor. It is like being captain number two, but even harder. Your goal is to force ALL of the station complex to stay in line. This includes security majors: don't let them go rogue. You have a console which allows you to torture every officer on complex; don't abuse it but if you see any signs of disobeyment feel free to torment the fucker up. \n \n \n Also, press dat fucking button before entering your cabinet or your turrets will rape you."
+			src << "\red \bold You're a prosecutor. It is like being captain number two, but even harder. Your goal is to force ALL of the station complex to stay in line. This includes security majors: don't let them go rogue. You have a console which allows you to torture every officer on complex; don't abuse it but if you see any signs of disobeyment feel free to torment the fucker up. \n \n \n Also, press dat fucking button before entering your cabinet or your turrets will [reverse_text("epar")] you."
 		if("baryga")
 			src << "\red \bold You're a dirty, smelly and greedy baryga, raiding the station complex from The Abyss. Security hates you and will kill or capture you on sight. Sell the drugs to the station complex dwellers, try to get as rich and swaggy as possible and use your gear to not get caught. \n Your <B>MAIN</B> objective is to hoard 1500 cherenkovs on your personal encryptor. Trade drugs for gems, money, cartridges and shit or be a robber (and got murdered in process)."
 		if("robot")
@@ -584,7 +584,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 		A.show_message(msg)
 		A.messages += "<b>[msg]</b>"
 
-/mob/new_player/proc/penisLogin()
+/mob/new_player/proc/sinepLogin()
 	if(src.client.logged_in)
 		src.client.reset_hud()
 	for(var/obj/beacon/B in world)
@@ -651,7 +651,7 @@ var/list/profavaible = list("assistant", "engineer", "security major", "doctor",
 					src.equip_key(new /obj/item/key/security())
 					src.icon_state = "security"
 					src.loc = locate(pick(61, 62), pick(37, 38), 1)
-					src << "\red \bold You're a security major. You have a gun for blinding and a baton for beating criminal scum and a jail for keeping live prisoners or hide dead bodies. Do not let people to steal, kill, rape, vandalize, release chlorine and so."
+					src << "\red \bold You're a security major. You have a gun for blinding and a baton for beating criminal scum and a jail for keeping live prisoners or hide dead bodies. Do not let people to steal, kill, [reverse_text("epar")], vandalize, release chlorine and so."
 				if("doctor")
 					src.chemprotect = 5
 					src.armor = 1
