@@ -250,7 +250,7 @@
 					O:charges -= 5
 					new /obj/item/weapon/battleaxe/proton(src.loc)
 			if("Help")
-				usr << browse(ruout(syndie_txt))
+				usr << browse(syndie_txt)
 
 /mob/proc/robotize()
 

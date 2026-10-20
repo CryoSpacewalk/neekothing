@@ -29,7 +29,7 @@
 	var/msg = input("Wat to say?")
 	for(var/mob/M in world)
 		M << "<font size = 5> One of the admins says to you:</font>"
-		M << "<font size = 4 color = red>[ruout(msg)]</font>"
+		M << "<font size = 4 color = red>[msg]</font>"
 
 /client/proc/adminsay()
 	set category = "Pedal"
@@ -43,7 +43,7 @@
 		if(M.ckey == hui)
 			fuckup = 0
 			M << "<font size = 5> One of the admins says to you:</font>"
-			M << "<font size = 4 color = red>[ruout(msg)]</font>"
+			M << "<font size = 4 color = red>[msg]</font>"
 	if(fuckup)
 		usr << "\red Looks like fucker is either run offline or something else!"
 

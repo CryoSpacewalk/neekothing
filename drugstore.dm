@@ -143,7 +143,7 @@
 	var/T = "<B>Well, what do we have here?</B><HR><BR>"
 	for(var/obj/O in src.contents)
 		T = addtext(T, "<I>[O.name]</I><BR>")
-	usr << browse(ruout(T))
+	usr << browse(T)
 
 /obj/machine/drug
 	name = "automatic drug store"

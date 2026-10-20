@@ -201,7 +201,7 @@
 				txt += "<font color = blue>[M.realname] (a dead One)</font><BR>"
 
 	spawn(0)
-		usr << browse(ruout(txt))
+		usr << browse(txt)
 
 		var/elist = list()
 		for(var/obj/landmark/heck/H in world)
@@ -507,7 +507,7 @@
 	src.voices_last_used = world.time
 	M << "\red There's a voice in your head!"
 	M << "\red It says:"
-	M << "[ruout(voicetxt)]"
+	M << "[voicetxt]"
 
 /mob/verb/psiterror()
 

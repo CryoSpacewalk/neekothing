@@ -79,7 +79,7 @@
 			hangedcount++
 			if(hangedcount == 7)
 				funfacts += "Lord loves the hanging - that's why He gave us necks"
-				world << "[ruout("Господь нас создал с шеей; ведь вешать Он любил!")]"
+				world << "Господь нас создал с шеей; ведь вешать Он любил!"
 				playmuzlo = 1
 				world << sound('LordLovesaHanging.ogg', 0, 0, 666, 40)
 				spawn(400)

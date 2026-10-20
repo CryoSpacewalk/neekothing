@@ -1130,7 +1130,7 @@
 			for(var/mob/M in world)
 				if(M.prof == "security major")
 					M << "\bold You receive a telepathy message:"
-					M << "<font color = magenta size = 4> [ruout(msg)] </font>"
+					M << "<font color = magenta size = 4> [msg] </font>"
 	else
 		usr << "It is off, damn it!"
 /obj/comp/alert/operate(obj/W)
@@ -1222,6 +1222,6 @@
 			for(var/mob/M in world)
 				if(M.prof == "security major")
 					M << "\bold You receive a telepathy message:"
-					M << "<font color = magenta size = 4> [ruout(msg)] </font>"
+					M << "<font color = magenta size = 4> [msg] </font>"
 	else
 		usr << "It is off, damn it!"

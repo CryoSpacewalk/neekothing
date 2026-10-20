@@ -84,13 +84,13 @@
 							chromo = 1
 				sleep(0)
 				if(chromo)
-					src.say("[ruout("I will never visit such a... creature. Sorry.")]")
+					src.say("I will never visit such a... creature. Sorry.")
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					smartblink(20, 10, loc)
 				else if(M:raped)
-					src.say("[ruout("Looks like I've already... visited this folk. Goodbye.")]")
+					src.say("Looks like I've already... visited this folk. Goodbye.")
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
 					new /obj/cloud/smoke/popo(loc)
@@ -140,7 +140,7 @@
 			raeptime--
 			sleep(5)
 		spawn(0)
-			src.say("[ruout("Thanks for the good company, [M:realname].")]")
+			src.say("Thanks for the good company, [M:realname].")
 			smartblink(20, 10, loc)
 			M:raped = 1
 

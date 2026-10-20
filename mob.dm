@@ -67,7 +67,7 @@
 /mob/verb/ooc(msg as text)
 
 	set name = "OOC"
-	world << "\color(200,50,200) \bold OOC: [usr.ckey]: [rhtml_encode(msg)]"
+	world << "\color(200,50,200) \bold OOC: [usr.ckey]: [html_encode(msg)]"
 /mob/verb/pullmob()
 	if(!(src == usr) && !usr.stunned)
 		set category = "Object"
@@ -271,7 +271,7 @@
 				M << "\red Somebody is trying to telespeak with you, but your clothing is blocking any incoming psionic messages."
 			else
 
-				M << "[src.realname] telesays, \bold \blue''[rhtml_encode(transform_to_xynta(msg, 2 + round(says_xynta / 10)))]''"
+				M << "[src.realname] telesays, \bold \blue''[html_encode(transform_to_xynta(msg, 2 + round(says_xynta / 10)))]''"
 
 /mob/verb/say(msg as text)
 
@@ -329,7 +329,7 @@
 
 			spawn(0)
 				for(var/mob/M in hurrurs)
-					M << "[src.realname] slurs, \bold''[rhtml_encode(transform_to_xynta(msg, 25 + round(says_xynta / 10)))]''"
+					M << "[src.realname] slurs, \bold''[html_encode(transform_to_xynta(msg, 25 + round(says_xynta / 10)))]''"
 	else if(hepe > 0 || mat == "ether")
 		if(prob((drunk - 1) * 15 - round(luck / 4)))
 			for(var/mob/M in hurrurs)
@@ -348,9 +348,9 @@
 
 
 
-				M << "[src.realname] says, \bold''[rhtml_encode(transform_to_xynta(msg, 10 + round(says_xynta / 10)))]''"
+				M << "[src.realname] says, \bold''[html_encode(transform_to_xynta(msg, 10 + round(says_xynta / 10)))]''"
 			for(var/obj/radio/station/S in range(1, src))
-				S.broadcast(rhtml_encode(msg))
+				S.broadcast(html_encode(msg))
 		else
 			for(var/mob/M in hurrurs)
 
@@ -366,15 +366,15 @@
 					if("flesh")
 						if(src.drunk > 1)
 							if(prob(src.drunk * 5))
-								M << "[realname] slurs, \bold [distort] ''[rhtml_encode(msg)], [pick("fuck it", "fuck you", "fuck", "fucking shit")]''"
+								M << "[realname] slurs, \bold [distort] ''[html_encode(msg)], [pick("fuck it", "fuck you", "fuck", "fucking shit")]''"
 							else
 								M << "[realname] slurs, \bold [distort] ''[html_encode(msg)]''"
 						else
-							M << "[realname] says, \bold [distort] ''[rhtml_encode(msg)]''"
+							M << "[realname] says, \bold [distort] ''[html_encode(msg)]''"
 					if("plastic")
-						M << "[realname] beeps, \bold [distort] ''[rhtml_encode(msg)]''"
+						M << "[realname] beeps, \bold [distort] ''[html_encode(msg)]''"
 					if("ether")
-						M << "<font color = purple>[realname] hisses, \bold [distort] ''[rhtml_encode(msg)]''</font>"
+						M << "<font color = purple>[realname] hisses, \bold [distort] ''[html_encode(msg)]''</font>"
 			for(var/obj/radio/station/S in range(1, src))
 				S.broadcast(msg)
 /mob/verb/count(cnt as num)
